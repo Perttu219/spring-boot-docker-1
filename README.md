@@ -1,5 +1,5 @@
 #Spring Boot and Docker
 
-Source code in this repo is to support my on line course for Docker and Spring Boot. 
+Source code in this repo is forked from project by John Thompson
 
-You can learn more about my course [here](http://courses.springframework.guru).
+You can learn more about his course [here](http://courses.springframework.guru).
