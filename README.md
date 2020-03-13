@@ -1,8 +1,5 @@
-how to run the fake integration test:
-clone this repo
-go to the project directory
-run the following command:
-mvn verify
+
+Clone this repo, go to the directory and give the command: mvn verify
 
 
 
