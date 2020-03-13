@@ -1,6 +1,7 @@
 
 Clone this repo, go to the directory and give the command: mvn verify
 
+If running Linux, uncomment line 78 in pom.xml and comment line 79
 
 
 #Spring Boot and Docker
