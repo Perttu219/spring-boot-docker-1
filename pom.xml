@@ -56,6 +56,10 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
 	</dependencies>
 	
 	<build>
@@ -67,7 +71,7 @@
 			<plugin>
 				<groupId>io.fabric8</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
-				<version>0.20.0</version>
+				<version>0.33.0</version>
 
 				<configuration>
 
@@ -110,7 +114,10 @@
 						<image>
 							<name>mysql</name>
                             <alias>mysqldb</alias>
-							<run>
+
+
+
+                            <run>
                                 <!--expose port for dn-->
 								<ports>
                                     <port>3306:3306</port>
@@ -169,7 +176,7 @@
                                 </dependsOn>
                                 <wait>
                                     <http>
-                                        <url>http://localhost:8081/health</url>
+                                        <url>http://localhost:8080/health</url>
                                         <method>GET</method>
                                         <status>200..399</status>
                                     </http>
